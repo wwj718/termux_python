@@ -49,7 +49,7 @@ def termux_contact_list():
 
 
 def termux_dialog():
-    out, rc, err = utils.execute('termux-dialg')
+    out, rc, err = utils.execute('termux-dialog')
     if rc:
         raise Exception(err)
     return out
